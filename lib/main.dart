@@ -61,7 +61,13 @@ class _HomePageState extends State<HomePage> {
                     itemCount: one.length,
                     controller: ScrollController(),
                     separatorBuilder: (_, __) => const SizedBox(height: 10),
-                    itemBuilder: ((context, index) => Container(
+                    itemBuilder: ((context, index) => GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            val1 = one[index].toString();
+                          });
+                        },
+                        child: Container(
                           height: 50,
                           color: Colors.white,
                           child: Row(
@@ -78,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                             Text('${one[index]}'),
                           ],
                         ),
-                        )),
+                      )  )),
                   ),
                 ),
                 const SizedBox(width: 10),
@@ -87,7 +93,13 @@ class _HomePageState extends State<HomePage> {
                     controller: ScrollController(),
                     itemCount: two.length,
                     separatorBuilder: (_, __) => const SizedBox(height: 10),
-                    itemBuilder: ((context, index) => Container(
+                    itemBuilder: ((context, index) => GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            val2 = two[index].toString();
+                          });
+                        },
+                        child: Container(
                           height: 50,
                           color: Colors.white,
                           child: Row(
@@ -104,7 +116,7 @@ class _HomePageState extends State<HomePage> {
                             Text('${two[index]}'),
                           ],
                         )
-                        )),
+                       )   )),
                   ),
                 ),
                 const SizedBox(width: 10),
@@ -113,7 +125,13 @@ class _HomePageState extends State<HomePage> {
                     controller: ScrollController(),
                     itemCount: three.length,
                     separatorBuilder: (_, __) => const SizedBox(height: 10),
-                    itemBuilder: ((context, index) => Container(
+                    itemBuilder: ((context, index) => GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            val3 = three[index].toString();
+                          });
+                        },
+                        child: Container(
                         height: 50,
                         color: Colors.white,
                         child: Row(
@@ -129,7 +147,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                             Text('${three[index]}'),
                           ],
-                        ))),
+                     ) ))),
                   ),
                 ),
               ],
