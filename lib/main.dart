@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Radio(
                               groupValue:val1,
-                              value: three[index],
+                              value: one[index],
                               onChanged: (value) {
                                 setState(() {
                                   val1 = value.toString();
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Radio(
                               groupValue:val2,
-                              value: three[index],
+                              value: two[index],
                               onChanged: (value) {
                                 setState(() {
                                   val2 = value.toString();
