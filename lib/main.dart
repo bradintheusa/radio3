@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                                 });
                               },
                             ),
-                            Text('${three[index]}'),
+                            Text('${one[index]}'),
                           ],
                         ),
                         )),
